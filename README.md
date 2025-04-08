@@ -1,6 +1,8 @@
 # brfss-summary
 BRFSS Project
 
+Objective: Automated production of BRFSS report tables using R and Git.
+
 Dataset: 2022 US BRFSS
 *Categories variables: age, sex, household incomes, race and ethnicity, education, disability
 •	Age: age, 19-24, 25-44, 45-64, 65+
