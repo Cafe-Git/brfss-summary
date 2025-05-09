@@ -1,7 +1,7 @@
 # brfss-summary
->BRFSS Project
->
->>Dataset: 2022 US BRFSS
+BRFSS Project
+Dataset: [2022 US BRFSS](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
+
 ## *Categories variables*: age, sex, household incomes, race and ethnicity, education, disability
 -	*Age*: age, 19-24, 25-44, 45-64, 65+
 -	*Sex*: sexvar
