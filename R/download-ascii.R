@@ -24,10 +24,10 @@ fs::file_delete(path)
 
 # rename ascii file
 fs::file_move(
-  fs::as_fs_path(unzip_outcome),
+  fs::as_fs_path(unzip_result),
   fs::path_wd("data", "brfss-2022-ascii.asc")
 )
 
 cli::cli_alert_success(
-  "BRFSS data successfully downdloaded and unzipped to {fs::path_wd('data/brss-2022-ascii.asc')}"
+  "BRFSS data successfully downloaded and unzipped to {fs::path_wd('data/brfss-2022-ascii.asc')}"
 )
