@@ -3,4 +3,5 @@ library(tidyverse)
 library(fs)
 library(reticulate)
 
-# reticulate::py_require("polars")
+reticulate::py_require("polars")
+pl <- import("polars")
