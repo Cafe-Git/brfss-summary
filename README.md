@@ -1,8 +1,14 @@
-# brfss-summary
-BRFSS Project
+~# brfss-summary~
+# BRFSS Project Summary
+
+## Objectives:
+1. Develop Data Scientist core competencies in R, Git, and Mardown
+2. Pilot GitHub as a collaborative public health Data Scientist project platform
+3. Demo automated annual public health report production
+
 Dataset: [2022 US BRFSS](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 
-## *Categories variables*: age, sex, household incomes, race and ethnicity, education, disability
+### *Categories variables*: age, sex, household incomes, race and ethnicity, education, disability
 -	*Age*: age, 19-24, 25-44, 45-64, 65+
 -	*Sex*: sexvar
 -	*Household incomes*: income3
@@ -10,20 +16,20 @@ Dataset: [2022 US BRFSS](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 -	*Race and ethnicity*: _RACEGR4
 -	*Disability*: blind,  decide,  diffwalk,  diffdres,  diffalon,  deaf
 
-## Health status indicator;
+### Health status indicator;
 -	*Fair or poor health*: _rfhlth 
 -	*Poor physical health*: at leat 14 days in past month: physhlth
 -	*Poor mental health*: at least 14 days in past month: menthlth
 -	*BMI*: _bmi5cat
 -	*Adults with at least one regular doctor*: persdoc3
 
-## Risk behavior;
+### Risk behavior;
 -	*Leisure time physical activity*:  _TOTINDA
 -	*Current smoker*: _RFSMOK3 
 -	*Heavy drinking*: _RFDRHV8
 -	*Binge drinking*: _Rfbing6
 
-## Clinical preventive practice;
+### Clinical preventive practice;
 -	*Routine checkup in past year*: checkup1
 -	*Adults aged 65+ who have had a flu shot within the past year*: _FLSHOT7
 -	*All adults who had flu shot in past year*: FLUSHOT7
@@ -32,7 +38,7 @@ Dataset: [2022 US BRFSS](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 -	*Received a tentanus shot in the past 10 years*: TETANUS1
 -	*Had a blood test for high blood sugar or diabetes in past 3 years*: PDIABTS1
 
-## Chronic Conditions;
+### Chronic Conditions;
 - *Adults with current asthma*: _ASTHMS1
 -	*Adults ever told they have COPD*: CHCCOPD3
 -	*Adults ever told they have arthriti*s: _DRDXAR2
@@ -43,6 +49,6 @@ Dataset: [2022 US BRFSS](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 -	*Adult ever told they have kidney disease*: CHCKDNY2
 -	*Adult ever told they have depression*: ADDEPEV3
 
-  ## Analysis variables:
+  ### Analysis variables:
   - *weighting variable*:_llcpwt
   - *stratefier*: _ststr 
