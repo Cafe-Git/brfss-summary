@@ -1,5 +1,5 @@
-# TODO: add helper function that will read the zips, unzip and create parqs
-# just to have for funsies
+# TODO: Implement a helper function to process ZIP files. 
+# The function should read ZIP archives, extract their contents, and convert the data into Parquet format.
 
 # ascii data exist?
 ascii_file_path <- fs::path_wd("data", "brfss-2022-ascii", ext = "asc")
