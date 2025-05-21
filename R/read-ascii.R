@@ -20,7 +20,7 @@ brfss <-
   readr::read_fwf(
     file = ascii_file_path,
     guess_max = 5000L,
-    fwf_widths(
+    readr::fwf_widths(
       widths = layout$width,
       col_names = layout$var_name
     )
