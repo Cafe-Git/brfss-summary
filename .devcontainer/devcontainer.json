@@ -1,0 +1,36 @@
+{
+    "name": "R Development",
+    "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/renv-cache:latest": {},
+        "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "posit.air-vscode",
+                "quarto.quarto"
+            ],
+            "settings": {
+                    "[r]": {
+                        "editor.formatOnSave": true,
+                        "editor.defaultFormatter": "Posit.air-vscode"
+                    }
+                }   
+            },
+        "codespaces": {
+            "openFiles": [
+                "README.md",
+                "R/main.R"
+                ]
+            }
+        },
+    "postCreateCommand": {
+        "renv-init": ["R", "-q", "-e", "if (!file.exists('renv.lock')) {renv::init()} else {print('renv already initialized.')}"],
+        "languageserver":  ["R", "-q", "-e", "renv::install('languageserver', repos='https://p3m.dev/cran/__linux__/noble/latest', lock = TRUE, prompt = FALSE, dependancies = TRUE)"],
+        //"httpgd": ["R", "-q", "-e", "renv::install('httpgd', repos='https://p3m.dev/cran/__linux__/noble/latest', lock = TRUE, prompt = FALSE, dependancies = TRUE)"]
+    },
+    "postStartCommand": {
+        "renv-restore": ["R", "-q", "-e", "renv::restore()"]
+    }
+}

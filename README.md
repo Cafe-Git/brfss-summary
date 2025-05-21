@@ -1,4 +1,3 @@
-~# brfss-summary~
 # BRFSS Project Summary
 
 ## Objectives:
@@ -52,3 +51,17 @@ Dataset: [2022 US BRFSS](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
   ### Analysis variables:
   - *weighting variable*:_llcpwt
   - *stratefier*: _ststr 
+
+
+### Devcontainer
+
+This repository makes use of a devcontainer setup for R inside of VSCode.
+The container has R, Quarto, and Air installed.  On container creation
+it will initialize the `renv` package and/or invoke `renv::restore()`
+to set up all the dependancies. It will also install the R package
+`languageserver` to enable to setup Microsoft's LSP.
+
+- [`renv`](https://rstudio.github.io/renv/articles/renv.html?_gl=1*1utovle*_ga*MTc3Mzg0OTUwOS4xNzE5NTE4MDk3*_ga_2C0WZ1JHG0*czE3NDc4NDM5NDgkbzI5JGcwJHQxNzQ3ODQzOTQ4JGowJGwwJGgw): 
+Helps you create reproducible environments for your R projects. 
+- [Quarto](https://quarto.org/): An open-source scientific and technical publishing system that works with multiple programming languages.
+- [Air](https://posit-dev.github.io/air/): A blazing fast code formatter written in Rust that will format your code as you save your files.
