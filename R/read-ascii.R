@@ -1,3 +1,6 @@
+# TODO: add helper function that will read the zips, unzip and create parqs
+# just to have for funsies
+
 # ascii data exist?
 ascii_file_path <- fs::path_wd("data", "brfss-2022-ascii", ext = "asc")
 if (!fs::file_exists(ascii_file_path)) cli::cli_alert_warning("No ASCII Data.")
