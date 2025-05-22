@@ -1,0 +1,35 @@
+{
+  "name": "Python Development",
+  "image": "mcr.microsoft.com/devcontainers/python:3",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {},
+    "ghcr.io/jsburckhardt/devcontainer-features/ruff:1": {},
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python": {
+          "defaultInterpreterPath": "/usr/local/bin/python",
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "formatting.provider": "ruff",
+          "linting.ruffEnabled": true,
+          "linting.enabled": true,
+          "linting.flake8Enabled": false,
+          "testing.pytestEnabled": true
+        },
+        "editor.lineNumbers": "relative"
+      }
+    }
+  },
+  "postCreateCommand": "uv init",
+  "postStartCommand": "uv sync",
+  "remoteUser": "vscode"
+}
