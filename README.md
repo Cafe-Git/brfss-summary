@@ -1,7 +1,7 @@
 # BRFSS Project Summary
 
 ## Objectives:
-1. Develop Data Scientist core competencies in R, Git, and Mardown
+1. Develop Data Scientist core competencies in R, Git, and Markdown
 2. Pilot GitHub as a collaborative public health Data Scientist project platform
 3. Demo automated annual public health report production
 
