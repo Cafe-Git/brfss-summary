@@ -1,18 +1,22 @@
-# TODO: Implement a helper function to process ZIP files. 
+# TODO: Implement a helper function to process ZIP files.
 # The function should read ZIP archives, extract their contents, and convert the data into Parquet format.
 
 # ascii data exist?
 ascii_file_path <- fs::path_wd("data", "brfss-2022-ascii", ext = "asc")
-if (!fs::file_exists(ascii_file_path)) cli::cli_alert_warning("No ASCII Data.")
+if (!fs::file_exists(ascii_file_path)) {
+  cli::cli_alert_warning("No ASCII Data.")
+}
 
 # layout file exist?
 layout_path <- fs::path_wd("data", "variable-layout-2022", ext = "parquet")
-if (!fs::file_exists(layout_path)) cli::cli_alert_warning("No layout Data.")
+if (!fs::file_exists(layout_path)) {
+  cli::cli_alert_warning("No layout Data.")
+}
 
 layout <-
   nanoparquet::read_parquet(layout_path) |>
   dplyr::mutate(
-    width = lead(col_start) - col_start
+    width = dplyr::lead(col_start) - col_start
   ) |>
   dplyr::filter(width > 0)
 
