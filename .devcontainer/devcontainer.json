@@ -26,9 +26,8 @@
             }
         },
     "postCreateCommand": {
-        "renv-init": ["R", "-q", "-e", "if (!file.exists('renv.lock')) {renv::init()} else {print('renv already initialized.')}"],
-        "languageserver":  ["R", "-q", "-e", "renv::install('languageserver', repos='https://p3m.dev/cran/__linux__/noble/latest', lock = TRUE, prompt = FALSE, dependancies = TRUE)"],
-        //"httpgd": ["R", "-q", "-e", "renv::install('httpgd', repos='https://p3m.dev/cran/__linux__/noble/latest', lock = TRUE, prompt = FALSE, dependancies = TRUE)"]
+        "setup":  ["R", "-q", "-e", "if (!file.exists('renv.lock')) {renv::init()} else {print('renv already initialized.')}", "&&", "R", "-q", "-e", "renv::install('languageserver', repos= 'https://p3m.dev/cran/__linux__/noble/latest', lock = TRUE, prompt = FALSE, dependancies = TRUE)"]
+
     },
     "postStartCommand": {
         "renv-restore": ["R", "-q", "-e", "renv::restore()"]
