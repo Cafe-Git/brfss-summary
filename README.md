@@ -1,5 +1,13 @@
 # BRFSS Project Summary
 
+## Usage
+
+This repository makes use of the `renv` package please run `renv::restore()`
+after cloning a fresh copy of the repo to set up all the dependancies. 
+
+- [`renv`](https://rstudio.github.io/renv/articles/renv.html?_gl=1*1utovle*_ga*MTc3Mzg0OTUwOS4xNzE5NTE4MDk3*_ga_2C0WZ1JHG0*czE3NDc4NDM5NDgkbzI5JGcwJHQxNzQ3ODQzOTQ4JGowJGwwJGgw): 
+Helps you create reproducible environments for your R projects. 
+
 ## Objectives:
 1. Develop Data Scientist core competencies in R, Git, and Mardown
 2. Pilot GitHub as a collaborative public health Data Scientist project platform
